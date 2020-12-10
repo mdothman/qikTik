@@ -1,11 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Autocomplete from "./components/autocomplete/autocomplete";
-import axios from "axios"
-const API = {
-  getStocks: () => {
-    return axios.get("/api/alpaca")
-  },
-}
+
+import API from "./utils/API"
 
 function App() {
   const [stocks,setStocks] = useState([])
